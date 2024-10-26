@@ -42,3 +42,32 @@ function sendMail(event) {
 
     window.location.href = `mailto:shishirpoudel92@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
+
+// hide card toggle for gallery
+
+function showHideCard() {
+    const hideCards = document.querySelectorAll('#hideCard');
+    const btn = document.getElementsByClassName("btt")[0];
+    hideCards.forEach(card => {
+        card.style.display = 'block'; 
+    });
+    btn.style.display = "none";
+}
+
+//details page
+// function showContent(sectionId) {
+//     // Hide all sections
+//     const sections = document.querySelectorAll('.content-section');
+//     sections.forEach(section => section.style.display = 'none');
+    
+//     // Show selected section
+//     document.getElementById(sectionId).style.display = 'block';
+// }
+function showContent(sectionId) {
+    // Hide all sections
+    const sections = document.querySelectorAll('.content-section');
+    sections.forEach(section => section.classList.remove('active'));
+    
+    // Show the selected section
+    document.getElementById(sectionId).classList.add('active');
+}

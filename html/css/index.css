@@ -1,26 +1,28 @@
 
-.main-contentt {
+.introo {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 50px;
     max-width: 1200px;
     /* margin: auto; */
     margin-top: 50px;
+    margin-left: 70px;
 }
-.introo{
+/* .introo{
     display: flex;
     justify-content: space-around;
     align-items: center;
 
-}
+} */
 
 .introo-text {
     max-width: 500px;
-    margin-right: 100px;
+    margin-right: 10px;
+    margin-left: 20px;
 }
 
-.introo-text h1 {
+.introo-text h1{
     font-size: 2.7rem;
     color: #ffff;
     font-weight: bold;
@@ -122,12 +124,19 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
 
 }
 .tech-stack span{
     padding: 10px;
     background-color: #333;
     border-radius: 20px;
+}
+.tech-stack span:hover{
+    background-color: #4a4161;
+    transition: linear 0.2s;
+    cursor: pointer;
 }
 
 .card-links {
@@ -202,13 +211,16 @@
     height: 100%;
     object-fit: cover; 
 }
+#hideCard{
+    display: none;
+}
 
 
 .button{
     background-color: green;
     padding: 20px;
     border-radius: 20px;
-    margin-left: 80px;
+    margin-left: 40px;
     width: 200px;
     cursor: pointer;
     border: none;
@@ -278,13 +290,17 @@
 
 .main-content h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.7rem;
 }
 
 .contact-image img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
+#ll a{
+    margin: 10px ;
 }
 
 .contact-form {
@@ -437,6 +453,75 @@
 .social-media-icons a:hover img {
     transform: scale(1.3);
 }
+
+/* //details */
+/* General styling */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.detaill {
+    text-align: center;
+    color: #333;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Styling the button column */
+.button-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button-column button {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: left;
+    width: 150px;
+}
+
+.button-column button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling the content display area */
+.content-display {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    background: transparent;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-section {
+    display: none;
+}
+.detaill{
+    margin-top: 50px;
+    color: whitesmoke !important;
+    margin-bottom: 50px;
+}
+
+.content-section.active {
+    display: block;
+}
+
+
 
 
 

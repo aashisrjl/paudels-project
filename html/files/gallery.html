@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <script src="../scripts/script.js"></script>
+    
     <!-- Header with Navigation -->
     <header>
         <nav>
@@ -74,21 +74,26 @@
     </div>
 
     <!-- seven -->
-    <div class="gallery-card" onclick="openModal('../images/me7.jpg')">
+    <div class="gallery-card" id="hideCard" onclick="openModal('../images/me7.jpg')">
         <img src="../images/me7.jpg" alt="Photo Description" class="gallery-image" />
         
     </div>
 
     <!-- eight -->
-    <div class="gallery-card" onclick="openModal('../images/me8.jpg')">
-        <img src="../images/me8.jpg" alt="Photo Description" class="gallery-image" />
-        
+    <div class="gallery-card" id="hideCard" onclick="openModal('../images/me8.jpg')">
+        <img src="../images/me8.jpg" alt="Photo Description" class="gallery-image" /> 
     </div>
+
      <!-- eight -->
-     <div class="gallery-card" onclick="openModal('../images/me2.jpg')">
+     <div class="gallery-card" id="hideCard" onclick="openModal('../images/me2.jpg')">
         <img src="../images/me2.jpg" alt="Photo Description" class="gallery-image" />
-       
     </div>
+
+    
+        <div class="gallery-card" id="hideCard" onclick="openModal('../images/me5.jpg')">
+            <img src="../images/me5.jpg" alt="Photo Description" class="gallery-image" />
+        </div>
+    
 
 </div>
 <div id="imageModal" class="modal">
@@ -96,7 +101,7 @@
     <img class="modal-content" id="modalImage">
     <div id="caption"></div>
 </div>
-    <a class="b" href="gallery.html"><button class="button">Load More...</button> </a>
+   <a class="btt" href="javascript:void(0);" onclick="showHideCard()"><button class="button">Load More...</button> </a>
     </main>
 
       <!-- Footer -->
@@ -126,7 +131,7 @@
             <p>© 2024 ShishirPaudel rights reserved.</p>
         </div>
     </footer>
+    <script src="../scripts/script.js"></script>
 
-    <script src="../scripts/index.js"></script>
 </body>
 </html>

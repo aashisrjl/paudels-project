@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Shishir</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    
+    <!-- Header with Navigation -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img  src="../images/paudelLogo.png" alt="Shishir logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li ><button><a style="padding: 10px;" href="../images/sp resume .docx" download>CV✔</a></button></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <h1 class="detaill">My Details </h1>
+        <h3>Click the button for respective content</h3>
+        <div class="content-wrapper">
+            
+            <!-- Buttons Column -->
+            <aside class="button-column">
+                <button onclick="showContent('objective')">Objective</button>
+                <button onclick="showContent('skills')">Skills</button>
+                <button onclick="showContent('address')">Address</button>
+                <button onclick="showContent('experiences')">Experiences</button>
+                <button onclick="showContent('education')">Education</button>
+            </aside>
+
+            <!-- Content Display Area -->
+            <section class="content-display">
+                <div id="objective" class="content-section">
+                    <h2>Objective</h2>
+                    <p>I aim to secure a position in a hospitality career where I can make a meaningful contribution to company success while gaining practical experience and strengthening my understanding of hospitality goals for the future.</p>
+                </div>
+                
+                <div id="skills" class="content-section">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Culinary Skills: knife skills, food preparation, cooking techniques, food safety</li>
+                        <li>Customer Service: Communication, problem-solving, teamwork, patience</li>
+                        <li>Multitasking: time management, organization, attention to detail</li>
+                        <li>Physical endurance: standing for long periods, lifting heavy objects</li>
+                        <li>Hygiene and Sanitation: Cleaning, Sanitizing, and Following Food Safety Regulations</li>
+                        <li>Equipment Knowledge: Operating kitchen equipment (e.g., ovens, grills, blenders)</li>
+                        <li>Cash Handling: Operating cash registers, handling transactions</li>
+                        <li>Inventory Management: Stocking supplies, tracking inventory</li>
+                    </ul>
+                </div>
+                
+                <div id="address" class="content-section">
+                    <h2>Address</h2>
+                    <p>Shishir Paudel <br> 0430390989 <br> Unit 91 25-35A Park Rd., Hurstville, 2220</p>
+                </div>
+                
+                <div id="experiences" class="content-section">
+                    <h2>Experiences</h2>
+                    <ul>
+                        <li>Working as an All-rounder in MADE BY MAC MEALS</li>
+                        <li>Positioned as Prep Hand IN (JIMMY’S FALAFEL)</li>
+                        <li>Worked as an All-rounder in Xtract Coffee</li>
+                    </ul>
+                    <h3>Duties:</h3>
+                    <ul>
+                        <li>Prepping: Chopping, dicing, and mincing vegetables, fruits, and meats</li>
+                        <li>Cooking: Assisting chefs, preparing meals, operating kitchen equipment</li>
+                        <li>Front-of-House: Greeting customers, taking orders, and serving food</li>
+                        <li>Washing: Cleaning and sanitizing equipment, washing dishes</li>
+                        <li>Managing Cold Rooms: Organizing and storing food, checking expiration dates</li>
+                    </ul>
+                </div>
+                
+                <div id="education" class="content-section">
+                    <h2>Education</h2>
+                    <p>Bachelor of Information Technology 2023-Present, SISTC, Sydney, Australia.</p>
+                    <p>High School Diploma, 2022, Southwestern State College, Kathmandu, Bagmati, Nepal</p>
+                </div>
+            </section>
+        </div>
+    </main>
+   
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <img height="50px" width="60px" src="../images/paudelLogo.png">
+                <h2>Shishir Paudel</h2>
+                <p>Developer|Student</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: shishirpaudel92@gmail.com</p>
+                <p>Phone: +61430390989</p>
+                <p>Address: Sidney, Australia</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p>© 2024 ShishirPaudel rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
