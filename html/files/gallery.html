@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home-Shishir</title>
-    <link rel="stylesheet" href="../css/gallery.css">
+    <title>Gallery-Shishir</title>
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -39,75 +39,62 @@
     </div>
     <div class="card">
         <!-- one -->
-    <div class="gallery-card">
+    <div class="gallery-card" onclick="openModal('../images/me1.jpg')">
         <img src="../images/me1.jpg" alt="Photo Description" class="gallery-image" />
-        <div class="photo-description">
-            <p>A beautiful view of the mountains at sunrise.</p>
-        </div>
+        
     </div>
 
     <!-- two -->
-    <div class="gallery-card">
+    <div class="gallery-card" onclick="openModal('../images/me9.jpg')">
         <img src="../images/me9.jpg" alt="Photo Description" class="gallery-image" />
-        <div class="photo-description">
-            <p>A beautiful view of the mountains at sunrise.</p>
-        </div>
+        
     </div>
     <!-- three -->
-    <div class="gallery-card">
+    <div class="gallery-card" onclick="openModal('../images/me3.jpg')">
         <img src="../images/me3.jpg" alt="Photo Description" class="gallery-image" />
-        <div class="photo-description">
-            <p>A beautiful view of the mountains at sunrise.</p>
-        </div>
+        
     </div>
 
     <!-- four -->
-    <div class="gallery-card">
+    <div class="gallery-card" onclick="openModal('../images/me4.jpg')">
         <img src="../images/me4.jpg" alt="Photo Description" class="gallery-image" />
-        <div class="photo-description">
-            <p>A beautiful view of the mountains at sunrise.</p>
-        </div>
+        
     </div>
 
     <!-- five -->
-    <div class="gallery-card">
+    <div class="gallery-card" onclick="openModal('../images/me5.jpg')">
         <img src="../images/me5.jpg" alt="Photo Description" class="gallery-image" />
-        <div class="photo-description">
-            <p>A beautiful view of the mountains at sunrise.</p>
-        </div>
+        
     </div>
 
     <!-- six -->
-    <div class="gallery-card">
+    <div class="gallery-card" onclick="openModal('../images/me6.jpg')">
         <img src="../images/me6.jpg" alt="Photo Description" class="gallery-image" />
-        <div class="photo-description">
-            <p>A beautiful view of the mountains at sunrise.</p>
-        </div>
+       
     </div>
 
     <!-- seven -->
-    <div class="gallery-card">
+    <div class="gallery-card" onclick="openModal('../images/me7.jpg')">
         <img src="../images/me7.jpg" alt="Photo Description" class="gallery-image" />
-        <div class="photo-description">
-            <p>A beautiful view of the mountains at sunrise.</p>
-        </div>
+        
     </div>
 
     <!-- eight -->
-    <div class="gallery-card">
+    <div class="gallery-card" onclick="openModal('../images/me8.jpg')">
         <img src="../images/me8.jpg" alt="Photo Description" class="gallery-image" />
-        <div class="photo-description">
-            <p>A beautiful view of the mountains at sunrise.</p>
-        </div>
+        
     </div>
      <!-- eight -->
-     <div class="gallery-card">
+     <div class="gallery-card" onclick="openModal('../images/me2.jpg')">
         <img src="../images/me2.jpg" alt="Photo Description" class="gallery-image" />
-        <div class="photo-description">
-            <p>A beautiful view of the mountains at sunrise.</p>
-        </div>
+       
     </div>
 
+</div>
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
 </div>
     <a class="b" href="gallery.html"><button class="button">Load More...</button> </a>
     </main>
