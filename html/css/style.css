@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    /* background-color: rgb(7, 7, 116); */
+    background-color: blue;
+}
+
+header {
+    background-color: rgb(7, 7, 116);
+    padding: 0.5rem 2rem;
+    /* background: transparent; */
+
+    position: sticky;
+    backdrop-filter: blur(10px);
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Drop shadow */
+    
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 80px; /* Adjust based on your logo size */
+    margin-right: 20px;
+    font-weight: bolder;
+    margin-left: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+nav ul button{
+    background-color: green;
+    inset: none;
+    outline: none;
+    border-radius: 5%;
+    border: none;
+}
+nav ul button:hover{
+    background-color: blue;
+    color: white;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+.logo:hover{
+    transform: scale(1.3);
+}
+footer {
+    background-color: rgb(7, 7, 116);
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 150px;
+
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+}
+
+.footer-section {
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ffff;
+}
+
+.footer-section p, 
+.footer-section a {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin: 5px 0;
+    text-decoration: none;
+}
+.footer-section img{
+    margin-bottom: 15px;
+}
+
+.footer-section a:hover {
+    color: #ff6347;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    /* font-size: 0.9rem; */
+    color: #aaa;
+    margin-top: 10px;
+}

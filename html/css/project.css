@@ -1,0 +1,89 @@
+.header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.main-content h3{
+    text-align: center;
+    margin-top: 10px;
+}
+.main-content h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.card {
+    background-color: #240677;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.card-image {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.tech-stack {
+    font-size: 0.7rem;
+    color: #c7bfbf;
+    margin-bottom: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.tech-stack span{
+    padding: 10px;
+    background-color: #333;
+    border-radius: 20px;
+}
+
+.card-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.card h3{
+    color: rgb(241, 0, 0);
+    margin-bottom: 20px;
+}
+.card-links a {
+    display: inline-block;
+    padding: 8px 12px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.card-links a:first-child {
+    background-color: #4CAF50; /* Live Project */
+}
+
+.card-links a:last-child {
+    background-color: #333; /* GitHub */
+}
+
+.card-links a:hover {
+    opacity: 0.9;
+}
