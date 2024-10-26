@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <script src="../scripts/script.js"></script>
     <!-- Header with Navigation -->
     <header>
         <nav>
             <a href="index.html" class="logo">
                 <img  src="../images/paudelLogo.png" alt="Shishir logo">
             </a>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -22,6 +23,11 @@
                 <li><a href="gallery.html">Gallery</a></li>
                 <li ><button><a style="padding: 10px;" href="../images/sp resume .docx" download>CV✔</a></button></li>
             </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
     
@@ -50,12 +56,13 @@
     
         <!-- Card 2 -->
         <div class="card">
-            <h3>TODO list</h3>
-            <img src="../images/project2.png" alt="Project 2" class="card-image">
+            <h3>Gaming Hub</h3>
+            <img src="../images/gaminghub.PNG" alt="Project 2" class="card-image">
             <div class="tech-stack">
                 <span>HTML</span>
                 <span>CSS</span>
                 <span>JavaScript</span>
+                <span>Php</span>
             </div>
             <div class="card-links">
                 <a href="https://liveproject2.com" target="_blank">Live Project</a>
@@ -66,7 +73,52 @@
         <!-- Card 3 -->
         <div class="card">
             <h3>Weather App</h3>
-            <img src="../images/project3.png" alt="Project 3" class="card-image">
+            <img src="../images/weather.PNG" alt="Project 3" class="card-image">
+            <div class="tech-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+            <div class="card-links">
+                <a href="https://liveproject3.com" target="_blank">Live Project</a>
+                <a href="https://github.com/username/project3" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <!-- card 4 -->
+        <div class="card">
+            <h3>Portfolio</h3>
+            <img src="../images/portfolio.PNG" alt="Project 3" class="card-image">
+            <div class="tech-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+            <div class="card-links">
+                <a href="https://liveproject3.com" target="_blank">Live Project</a>
+                <a href="https://github.com/username/project3" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <!-- card 5 -->
+        <div class="card">
+            <h3>TODO App</h3>
+            <img src="../images/todo.PNG" alt="Project 3" class="card-image">
+            <div class="tech-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+            <div class="card-links">
+                <a href="https://liveproject3.com" target="_blank">Live Project</a>
+                <a href="https://github.com/username/project3" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+          <!-- card 6 -->
+          <div class="card">
+            <h3>Projects list</h3>
+            <img src="../images/project.PNG" alt="Project 3" class="card-image">
             <div class="tech-stack">
                 <span>HTML</span>
                 <span>CSS</span>

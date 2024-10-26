@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <script src="../scripts/script.js"></script>
     <!-- Header with Navigation -->
     <header>
         <nav>
             <a href="index.html" class="logo">
                 <img  src="../images/paudelLogo.png" alt="Shishir logo">
             </a>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -22,10 +23,17 @@
                 <li><a href="gallery.html">Gallery</a></li>
                 <li ><button><a style="padding: 10px;" href="../images/sp resume .docx" download>CV✔</a></button></li>
             </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
     
-
+    <div class="header-content">
+        <h2>CONNECT WITH ME</h2>
+     </div>
     <!-- Main Content Section -->
     <main class="contact-container">
         <!-- Left Side: Image -->
@@ -35,7 +43,7 @@
 
         <!-- Right Side: Contact Form -->
         <div class="contact-form">
-            <h2>Contact Me</h2>
+            <h2>Contact Here</h2>
             <form onsubmit="sendMail(event)">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Your Name" required>

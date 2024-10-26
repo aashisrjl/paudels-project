@@ -44,6 +44,20 @@
     font-weight: bold;
     
 }
+.projects-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #ff6347;
+    text-decoration: none;
+    border-radius: 5px;
+    border: solid 5px white;
+}
+
+.projects-link:hover {
+    background-color: #72ff47;
+}
 
 .intro-text .blurb {
     font-size: 1.1rem;

@@ -6,6 +6,17 @@
     margin: 50px auto;
     padding: 20px;
 }
+.header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.main-content h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 .contact-image img {
     max-width: 100%;
