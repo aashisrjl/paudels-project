@@ -118,6 +118,7 @@ nav ul li a:hover {
     }
 }
 
+
 footer {
     background-color: rgb(7, 7, 116);
     color: #fff;
@@ -171,4 +172,129 @@ footer {
     /* font-size: 0.9rem; */
     color: #aaa;
     margin-top: 10px;
+}
+
+/* Base Styles (Desktop and Large Screens) */
+.introo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1200px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.introo-text {
+    max-width: 500px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.introo-text h1 {
+    font-size: 2.7rem;
+}
+
+.introo-text .career {
+    font-size: 1.9rem;
+}
+
+.introo-text .blurb {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin-top: 30px;
+}
+
+footer .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Large Screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+    .introo {
+        padding: 60px 0;
+        margin: auto;
+        max-width: 1300px;
+        margin-left: 100px;
+        margin-right: 50px;
+    }
+
+    .introo-text h1 {
+        font-size: 3.2rem;
+    }
+
+    .introo-text .career {
+        font-size: 2rem;
+    }
+
+    footer .footer-section {
+        max-width: 350px;
+    }
+}
+
+/* Tablet Screens (min-width: 768px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .introo {
+        padding: 30px 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .introo-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .introo-text .career {
+        font-size: 1.6rem;
+    }
+
+    .footer-container {
+        flex-direction: row;
+    }
+}
+
+/* Mobile Screens (max-width: 767px) */
+@media (max-width: 767px) {
+    .introo {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .introo-text {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .introo-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .introo-text .career {
+        font-size: 1.4rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    footer .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .footer-section {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
 }

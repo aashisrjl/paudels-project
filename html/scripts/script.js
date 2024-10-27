@@ -27,21 +27,57 @@ setInterval(() => {
 }, 1000); 
 
 
-//functioning mailto 
+//form validation and mail send
 function sendMail(event) {
     event.preventDefault(); // Prevent form submission
 
+    // Get form elements
+    const nameField = document.getElementById("name");
+    const emailField = document.getElementById("email");
+    const messageField = document.getElementById("message");
+
     // Get form values
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
+    const name = nameField.value.trim();
+    const email = emailField.value.trim();
+    const message = messageField.value.trim();
 
+    // Get error message elements
+    const nameContent = document.getElementsByClassName("err-name")[0];
+    const emailContent = document.getElementsByClassName("err-email")[0];
+    const messageContent = document.getElementsByClassName("err-message")[0];
 
-    const subject = `Contact from ${name}`;
-    const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+    // Validation
+    let isValid = true;
 
-    window.location.href = `mailto:shishirpoudel92@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    if (!name) {
+        nameContent.style.display = "block";
+        isValid = false;
+    } else {
+        nameContent.style.display = "none";
+    }
+
+    if (!email) {
+        emailContent.style.display = "block";
+        isValid = false;
+    } else {
+        emailContent.style.display = "none";
+    }
+
+    if (!message) {
+        messageContent.style.display = "block";
+        isValid = false;
+    } else {
+        messageContent.style.display = "none";
+    }
+
+    // If all fields are valid, proceed with email sending
+    if (isValid) {
+        const subject = `Contact from ${name}`;
+        const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+        window.location.href = `mailto:shishirpoudel92@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    }
 }
+
 
 // hide card toggle for gallery
 
@@ -71,3 +107,6 @@ function showContent(sectionId) {
     // Show the selected section
     document.getElementById(sectionId).classList.add('active');
 }
+
+
+

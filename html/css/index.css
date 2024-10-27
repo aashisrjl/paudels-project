@@ -106,6 +106,30 @@
     background-color: #491532;
     transition: linear 0.3s;
 }
+/* Mobile Screens (max-width: 480px) */
+@media (max-width: 786px) {
+    .connect {
+        margin-top: 50px;
+        padding: 0 15px; /* Add padding for mobile edge spacing */
+    }
+
+    .connect h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .connect p {
+        font-size: 1rem;
+        width: 100%; /* Full width on mobile */
+        line-height: 25px;
+    }
+
+    .connect button {
+        width: 120px;
+        padding: 8px;
+        font-size: 1rem;
+    }
+}
 
 /* projects */
 .header-cont{
@@ -302,6 +326,10 @@
     font-weight: bold;
     cursor: pointer;
 }
+#caption{
+    text-align: center;
+    padding: 10px;
+}
 
 .close:hover,
 .close:focus {
@@ -346,6 +374,11 @@
     max-width: 500px;
     padding: 20px;
 }
+.contact-form p{
+    color: red;
+    margin-bottom: 10px;
+    display: none;
+}
 
 .contact-form h2 {
     margin-bottom: 20px;
@@ -355,13 +388,14 @@
 .contact-form label {
     font-size: 1rem;
     color: #fff;
+    margin-top: 20px;
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
     padding: 10px;
-    margin: 10px 0 20px;
+    margin: 10px 0 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background: rgb(16, 16, 122);
